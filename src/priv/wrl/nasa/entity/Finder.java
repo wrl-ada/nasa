@@ -1,6 +1,14 @@
+package priv.wrl.nasa.entity;
+
+/**
+ * 探测器
+ */
 public class Finder {
+    // x坐标
     private int x;
+    // y坐标
     private int y;
+    // 方向
     private String direction;
 
     public Finder(int x, int y, String direction) {
@@ -33,24 +41,24 @@ public class Finder {
         this.direction=direction;
     }
 
-    public int moveWest(){
+    public int moveWest() {
         return x--;
     }
 
-    public int moveEast(){
+    public int moveEast() {
         return x++;
     }
 
-    public int moveNorth(){
+    public int moveNorth() {
         return y++;
     }
 
-    public int moveSouth(){
+    public int moveSouth() {
         return y--;
     }
 
-    public String toString(){
-        return x+" "+y+" "+direction;
+    public String toString() {
+        return x + " " + y + " " + direction;
     }
 
 }
